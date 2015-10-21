@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ICANTEEN</string>
+    <string name="title_activity_random">Random</string>
+    <string name="title_activity_choosing">Choose</string>
+    <string name="title_activity_name_list">Restaurant List</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_review">Review</string>
+</resources>
