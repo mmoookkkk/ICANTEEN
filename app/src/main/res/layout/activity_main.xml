@@ -39,10 +39,14 @@
         android:id="@+id/icanteen_title"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp" />
+        android:layout_marginTop="73dp"
+        android:textColor="#ffffff" />
 
     <ImageView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:src="@drawable/main" />
+    android:src="@drawable/mainn"
+        android:layout_below="@+id/icanteen_title"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_random" />
 </RelativeLayout>
