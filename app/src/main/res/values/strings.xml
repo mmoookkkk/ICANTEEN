@@ -19,6 +19,16 @@
     <string name="food7">ลุงเหนอ ก๋วยเตี๋ยวทรงเครื่อง</string>
     <string name="food8">ข้าวราดแกงป้าหลง</string>
     <string name="food9">อ่องเหวิน ข้าวมันไก่</string>
+    <string name="food10">สเต๊กสามย่าน</string>
+    <string name="food11">อาหารตามสั่ง</string>
+    <string name="dessert1">Parabola</string>
+    <string name="dessert2">Fruit Shop</string>
+    <string name="dessert3">ขนมหวานเย็น</string>
+    <string name="dessert4">ร้าน6</string>
+    <string name="beverage1">The Lobby</string>
+    <string name="beverage2">ลุงชิน กาแฟสด</string>
+    <string name="beverage3">สุชาดา น้ำผลไม้</string>
+    <string name="beverage4">ก กาแฟสด</string>
 
 
 </resources>
