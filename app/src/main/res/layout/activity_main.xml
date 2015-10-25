@@ -16,7 +16,8 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/icanteen_title"
         android:layout_toEndOf="@+id/icanteen_title"
-        android:onClick="clickRandom"/>
+        android:textColor="#ffffff"
+        android:background="#a0a0a0" />
 
     <Button
         android:layout_width="wrap_content"
@@ -26,7 +27,9 @@
         android:layout_alignTop="@+id/button_random"
         android:layout_toLeftOf="@+id/icanteen_title"
         android:layout_toStartOf="@+id/icanteen_title"
-        android:onClick="clickChoose" />
+        android:onClick="clickChoose"
+        android:background="#a0a0a0"
+        android:textColor="#ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
