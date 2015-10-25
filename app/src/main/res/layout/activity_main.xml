@@ -15,8 +15,7 @@
         android:layout_marginBottom="153dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/icanteen_title"
-        android:layout_toEndOf="@+id/icanteen_title"
-        android:onClick="clickRandom"/>
+        android:layout_toEndOf="@+id/icanteen_title" />
 
     <Button
         android:layout_width="wrap_content"
