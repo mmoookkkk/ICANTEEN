@@ -36,7 +36,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/FOOD"
+        android:text="FOOD"
         android:id="@+id/button_food"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
@@ -46,7 +46,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/BEVERAGE"
+        android:text="BEVERAGE"
         android:id="@+id/button_beverage"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
@@ -56,7 +56,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/DESSERT"
+        android:text="DESSERT"
         android:id="@+id/button_dessert"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
