@@ -19,5 +19,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, Choosing.class);
         startActivity(intent);
     }
+    public void clickRandom(View view){
+        Intent intent2= new Intent(this, Random.class);
+        startActivity(intent2);
+    }
 
 }
