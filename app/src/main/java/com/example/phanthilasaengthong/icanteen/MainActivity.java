@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //addchange!!//
+        //addchange!!
     }
     public void clickChoose(View view) {
         // Do something in response to button
