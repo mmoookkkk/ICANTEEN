@@ -5,4 +5,10 @@
     <string name="title_activity_name_list">Restaurant List</string>
     <string name="title_activity_details">Details</string>
     <string name="title_activity_review">Review</string>
+    <string name="RANDOM">RANDOM</string>
+    <string name="CHOOSE">CHOOSE</string>
+    <string name="FOOD">FOOD</string>
+    <string name="BEVERAGE">BEVERAGE</string>
+    <string name="DESSERT">DESSERT</string>
+
 </resources>

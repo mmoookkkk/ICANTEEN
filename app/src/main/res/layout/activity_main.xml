@@ -10,7 +10,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RANDOM"
+        android:text="@string/RANDOM"
         android:id="@+id/button_random"
         android:layout_marginBottom="153dp"
         android:layout_alignParentBottom="true"
@@ -22,7 +22,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CHOOSE"
+        android:text="@string/CHOOSE"
         android:id="@+id/button_choose"
         android:layout_alignTop="@+id/button_random"
         android:layout_toLeftOf="@+id/icanteen_title"
