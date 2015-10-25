@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
 
     tools:context=".MainActivity"
-    android:background="#760b0b">
+    android:background="#ffffff">
 
 </RelativeLayout>
