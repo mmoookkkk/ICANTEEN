@@ -20,6 +20,7 @@ public class Choosing extends AppCompatActivity {
     }
     public void chooseCategory(){
 
+
     }
 
 }
