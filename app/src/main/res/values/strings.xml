@@ -10,5 +10,15 @@
     <string name="FOOD">FOOD</string>
     <string name="BEVERAGE">BEVERAGE</string>
     <string name="DESSERT">DESSERT</string>
+    <string name="food1">kin-Len</string>
+    <string name="food2">ส้ม อาหารชุด</string>
+    <string name="food3">รุจิศรี เส้นเล็กต้มยำ</string>
+    <string name="food4">อรวรรณ ข้าวราดแกง</string>
+    <string name="food5">ข้าวเหนียวไก่ทอด</string>
+    <string name="food6">รัตน์ อาหารจานด่วน</string>
+    <string name="food7">ลุงเหนอ ก๋วยเตี๋ยวทรงเครื่อง</string>
+    <string name="food8">ข้าวราดแกงป้าหลง</string>
+    <string name="food9">อ่องเหวิน ข้าวมันไก่</string>
+
 
 </resources>
