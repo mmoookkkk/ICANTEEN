@@ -18,5 +18,8 @@ public class Choosing extends AppCompatActivity {
         setContentView(R.layout.activity_choosing);
         Intent intent = getIntent();
     }
+    public void chooseCategory(){
+
+    }
 
 }

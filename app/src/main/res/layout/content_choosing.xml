@@ -41,7 +41,9 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="#a0a0a0"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:onClick="chooseCategory"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -51,7 +53,10 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="#a0a0a0"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:onClick="chooseCategory"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -61,5 +66,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:background="#a0a0a0"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:onClick="chooseCategory"/>
 </LinearLayout>
