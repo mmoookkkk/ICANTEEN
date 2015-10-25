@@ -23,7 +23,7 @@
         android:layout_width="212dp"
         android:layout_height="43dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="CATEGORY"
+        android:text="@string/CATEGORY"
         android:id="@+id/text_category"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffff"
