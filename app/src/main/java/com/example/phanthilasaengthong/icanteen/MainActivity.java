@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         //addchange!!
     }
     public void clickChoose(View view) {
-        // Do something in response to button
+        // Do something in response to button//
         Intent intent = new Intent(this, Choosing.class);
         startActivity(intent);
     }
