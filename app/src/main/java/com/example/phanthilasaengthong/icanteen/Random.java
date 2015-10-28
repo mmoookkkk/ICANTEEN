@@ -18,6 +18,9 @@ public class Random extends AppCompatActivity {
 
 
     }
+    //on resume na vickyyyyyyy!!! harm luemmm e vicky!!
+    //du example in namelist na e vickyyy mai suay
+
 
 
 }
