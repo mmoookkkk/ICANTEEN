@@ -17,5 +17,6 @@ public class Details extends AppCompatActivity {
         Intent intent=getIntent();
     }
     //on resume na vickyyyyyyy!!! harm luemmm e vicky!!
+    //du example in namelist na e vickyyy mai suay
 
 }
