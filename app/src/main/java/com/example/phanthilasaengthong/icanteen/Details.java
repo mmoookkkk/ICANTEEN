@@ -16,5 +16,6 @@ public class Details extends AppCompatActivity {
         setContentView(R.layout.activity_details);
         Intent intent=getIntent();
     }
+    //on resume na vickyyyyyyy!!! harm luemmm e vicky!!
 
 }
