@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 public class NameList extends AppCompatActivity {
     public final static String RES_CHOSEN = "com.mycompany.myfirstapp.MESSAGE";
+    public static final String RES_ID ="com.myexample.myfirstapp.MESSAGE1" ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,8 +57,10 @@ public class NameList extends AppCompatActivity {
     public void chooseFood(View view) {
         Intent intent1=new Intent(this,Details.class);
         Button bc=(Button) view;
+        int id=bc.getId();
         String name_res=bc.getText().toString();
         intent1.putExtra(RES_CHOSEN, name_res);
+        intent1.putExtra(RES_ID,id);
         startActivity(intent1);
 
 

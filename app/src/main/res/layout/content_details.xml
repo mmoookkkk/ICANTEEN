@@ -27,14 +27,15 @@
         android:layout_marginBottom="20dp"/>
 
     <ImageView
-        android:layout_width="202dp"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:id="@+id/image_restaurant"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"
-        android:background="#fffefe"
-        android:layout_weight="0.60" />
+
+        android:layout_weight="0.60"
+        android:visibility="visible" />
 
     <RatingBar
         android:layout_width="wrap_content"
