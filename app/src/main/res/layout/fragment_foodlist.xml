@@ -8,66 +8,78 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food1"
-        android:id="@+id/fd1" />
+        android:id="@+id/fd1"
+        android:onClick="chooseFood"
+        />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food2"
-        android:id="@+id/fd2" />
+        android:id="@+id/fd2"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food3"
-        android:id="@+id/fd3" />
+        android:id="@+id/fd3"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food4"
-        android:id="@+id/fd4" />
+        android:id="@+id/fd4"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food5"
-        android:id="@+id/fd5" />
+        android:id="@+id/fd5"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food6"
-        android:id="@+id/fd6" />
+        android:id="@+id/fd6"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food7"
-        android:id="@+id/fd7" />
+        android:id="@+id/fd7"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food8"
-        android:id="@+id/fd8" />
+        android:id="@+id/fd8"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food9"
-        android:id="@+id/fd9" />
+        android:id="@+id/fd9"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food10"
-        android:id="@+id/fd10" />
+        android:id="@+id/fd10"
+        android:onClick="chooseFood"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/food11"
-        android:id="@+id/fd11" />
+        android:id="@+id/fd11"
+        android:onClick="chooseFood"/>
 
 </LinearLayout>

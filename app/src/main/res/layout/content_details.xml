@@ -8,6 +8,8 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_details"
-    tools:context="com.example.phanthilasaengthong.icanteen.Details">
+    tools:context="com.example.phanthilasaengthong.icanteen.Details"
+    android:background="#f49f9f"
+    android:visibility="visible">
 
 </RelativeLayout>
