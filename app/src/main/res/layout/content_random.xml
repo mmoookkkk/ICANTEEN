@@ -34,18 +34,20 @@
         android:layout_marginTop="58dp" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Menu"
         android:id="@+id/menu_random"
         android:layout_marginBottom="150dp"
         android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/random_title"
-        android:layout_toStartOf="@+id/random_title" />
+        android:layout_toStartOf="@+id/random_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#f5f8f4f4" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Shop"
@@ -53,6 +55,7 @@
         android:layout_marginTop="54dp"
         android:layout_alignTop="@+id/menu_random"
         android:layout_alignLeft="@+id/menu_random"
-        android:layout_alignStart="@+id/menu_random" />
+        android:layout_alignStart="@+id/menu_random"
+        android:textColor="#faf7f7" />
 
 </RelativeLayout>
