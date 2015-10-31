@@ -51,8 +51,8 @@
         android:text="Shop"
         android:id="@+id/random_shop"
         android:layout_marginTop="54dp"
-        android:layout_alignTop="@+id/textView2"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2" />
+        android:layout_alignTop="@+id/menu_random"
+        android:layout_alignLeft="@+id/menu_random"
+        android:layout_alignStart="@+id/menu_random" />
 
 </RelativeLayout>
