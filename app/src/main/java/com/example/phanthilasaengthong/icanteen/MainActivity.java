@@ -6,12 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.parse.ParseObject;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ParseObject testObject = new ParseObject("TestObject");
+        testObject.put("foo", "bar");
+        testObject.saveInBackground();
         //addchange!!
     }
     public void clickChoose(View view) {
