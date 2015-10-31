@@ -18,5 +18,19 @@ public class Random extends AppCompatActivity {
 
 
     }
+    protected void onResume() {
+        super.onResume();
+        int r=(int) Math.ceil(Math.random()*7);
+        if(r==1){
+
+        }
+
+
+
+    }
+    //on resume na vickyyyyyyy!!! harm luemmm e vicky!!
+    //du example in namelist na e vickyyy suay
+
+
 
 }

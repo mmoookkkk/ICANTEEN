@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#800000">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beverage1"
+        android:id="@+id/bev1"
+        android:onClick="chooseFood"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beverage2"
+        android:id="@+id/bev2"
+        android:onClick="chooseFood"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beverage3"
+        android:id="@+id/bev3"
+        android:onClick="chooseFood"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beverage4"
+        android:id="@+id/bev4"
+        android:onClick="chooseFood"/>
+</LinearLayout>
