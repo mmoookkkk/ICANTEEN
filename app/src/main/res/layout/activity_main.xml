@@ -18,7 +18,9 @@
         android:textColor="#ffffff"
         android:background="#a0a0a0"
         android:visibility="visible"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/button_choose"
+        android:layout_alignEnd="@+id/button_choose"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -30,7 +32,8 @@
         android:background="#a0a0a0"
         android:textColor="#ffffff"
         android:visibility="visible"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
 
     <ImageView
     android:layout_width="fill_parent"
