@@ -1,6 +1,7 @@
 package com.example.phanthilasaengthong.icanteen;
 
 import android.app.Application;
+import android.os.Bundle;
 import android.test.ApplicationTestCase;
 
 /**
@@ -9,5 +10,7 @@ import android.test.ApplicationTestCase;
 public class ApplicationTest extends ApplicationTestCase<Application> {
     public ApplicationTest() {
         super(Application.class);
+
     }
+
 }
