@@ -15,11 +15,12 @@
         android:onClick="clickRandom"
         android:layout_marginBottom="153dp"
         android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/icanteen_title"
-        android:layout_toEndOf="@+id/icanteen_title"
         android:textColor="#ffffff"
         android:background="#a0a0a0"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:layout_alignRight="@+id/button_choose"
+        android:layout_alignEnd="@+id/button_choose"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -27,30 +28,17 @@
         android:text="@string/CHOOSE"
         android:id="@+id/button_choose"
         android:layout_alignTop="@+id/button_random"
-        android:layout_toLeftOf="@+id/icanteen_title"
-        android:layout_toStartOf="@+id/icanteen_title"
         android:onClick="clickChoose"
         android:background="#a0a0a0"
         android:textColor="#ffffff"
-        android:visibility="visible" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/app_name"
-        android:id="@+id/icanteen_title"
-        android:layout_alignParentTop="true"
+        android:visibility="visible"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="73dp"
-        android:textColor="#ffffff"
-        android:visibility="visible" />
+        android:layout_marginTop="70dp"/>
 
     <ImageView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:src="@drawable/mainn"
-        android:layout_below="@+id/icanteen_title"
+    android:src="@drawable/main"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/button_random" />
 </RelativeLayout>
