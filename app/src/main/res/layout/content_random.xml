@@ -61,27 +61,6 @@
         android:layout_above="@+id/textView2"
         android:textSize="25dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Rating"
-        android:id="@+id/textView5"
-        android:textColor="#ffffff"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_above="@+id/ratingBar"
-        android:layout_alignLeft="@+id/ratingBar"
-        android:layout_alignStart="@+id/ratingBar"
-        android:textSize="25dp" />
 
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="48dp" />
 
 </RelativeLayout>
