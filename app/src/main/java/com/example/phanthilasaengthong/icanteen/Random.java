@@ -7,6 +7,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Random extends AppCompatActivity {
@@ -18,6 +19,7 @@ public class Random extends AppCompatActivity {
         Intent intent = getIntent();
 
 
+
     }
     protected void onResume() {
         super.onResume();
@@ -27,6 +29,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("ข้าวเหนียวไก่ทอด");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.food5));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random1);
 
         }
 
@@ -35,6 +39,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("ข้าวไก่แซ่บ");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.food6));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random2);
 
         }
 
@@ -43,6 +49,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("ไข่กระทะ");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.food2));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random3);
 
         }
 
@@ -51,6 +59,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("ก๋วยเตี๋ยวต้มยำ");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.food3));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random7);
 
         }
 
@@ -59,6 +69,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("ข้าวไก่กระเพรา");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.food6));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random4);
 
         }
 
@@ -67,6 +79,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("หมูมะนาว");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.food3));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random5);
 
         }
 
@@ -75,6 +89,8 @@ public class Random extends AppCompatActivity {
             menu_random.setText("parabola");
             TextView res_random = (TextView) findViewById(R.id.random_shop);
             res_random.setText(getResources().getText(R.string.dessert1));
+            ImageView image_random= (ImageView) findViewById(R.id.image_random);
+            image_random.setImageResource(R.drawable.random6);
 
         }
 
