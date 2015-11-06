@@ -24,7 +24,6 @@ public class NameList extends AppCompatActivity {
         setContentView(R.layout.activity_name_list);
         Intent intent = getIntent();
         String type = intent.getStringExtra(Choosing.TYPE_CHOSEN);
-        //klaiklai unnee na jaa
         TextView type_title = (TextView) findViewById(R.id.type_title);
         type_title.setText(type);
 
