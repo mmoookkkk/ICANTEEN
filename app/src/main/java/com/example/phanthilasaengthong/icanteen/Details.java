@@ -21,10 +21,7 @@ public class Details extends AppCompatActivity {
         int id=intent.getIntExtra(NameList.RES_ID,0);
         TextView rn = (TextView) findViewById(R.id.restaurantname);
         rn.setText(name);
-        /*if(id==R.id.des1){
-            ImageView image=(ImageView) findViewById(R.id.image_restaurant);
-            image.setImageResource(R.drawable.parabola);
-        }*/
+
     }
 
 }

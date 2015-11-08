@@ -18,13 +18,10 @@ public class MainActivity extends AppCompatActivity {
 //        Parse.enableLocalDatastore(this);
 //        Parse.initialize(this, "DGvHPpPOc1GMvZ3uortPKJUnUxoB1UvHIEB18tqF", "rGHEIPpLxH9zmqwVoo1RNEilKoiPQjQJwiwt16Kz");
 //
-//       ParseObject testObject = new ParseObject("hello");
-//       testObject.put("foo", "bar");
+//        ParseObject testObject = new ParseObject("hello");
+//       testObject.put("foo", "yay");
 //        testObject.saveInBackground();
         //addchange!!
-    }
-    public void onResume(){
-        super.onResume();
     }
     public void clickChoose(View view) {
         // Do something in response to button//
