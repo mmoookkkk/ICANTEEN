@@ -14,11 +14,11 @@ public class Review extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_review);
-
+        Intent intent=getIntent();
     }
     public void showThankyou(View view){
-        Intent intent = new Intent(this, Thankyou.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, Thankyou.class);
+        startActivity(intent2);
 
     }
 

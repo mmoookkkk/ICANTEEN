@@ -11,29 +11,13 @@
     tools:context="com.example.phanthilasaengthong.icanteen.Review"
     android:background="#800000">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dip"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/frameLayout">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="COMMENT!!"
-            android:id="@+id/button3"
-            android:layout_gravity="center_horizontal|top"
-            android:onClick="=showThankyou"/>
-    </FrameLayout>
-
-    <ScrollView
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/scrollView"
-        android:layout_below="@+id/frameLayout"
+        android:layout_height="wrap_content"
+        android:text="COMMENT"
+        android:id="@+id/COMMENT"
+        android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:onClick="showThankyou"/>
 </RelativeLayout>

@@ -23,5 +23,9 @@ public class Details extends AppCompatActivity {
         rn.setText(name);
 
     }
+    public void toReview(View view){
+        Intent intent2= new Intent(this, Review.class);
+        startActivity(intent2);
+    }
 
 }
