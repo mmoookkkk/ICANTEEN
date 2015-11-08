@@ -63,6 +63,7 @@ public class Circle extends View {
         };
         dthread = new DrawingThread(this, 10);
         dthread.start();
+        //d
     }
 
     public void onDraw(Canvas c) {
