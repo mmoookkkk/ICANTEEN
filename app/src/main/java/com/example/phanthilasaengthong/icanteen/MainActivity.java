@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 //        ParseObject testObject = new ParseObject("hello");
 //       testObject.put("foo", "yay");
 //        testObject.saveInBackground();
-        //addchange!!
+        //addchange!!//
     }
     public void clickChoose(View view) {
         // Do something in response to button//
