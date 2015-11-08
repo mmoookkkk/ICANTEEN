@@ -39,6 +39,7 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:src="@drawable/main"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/button_random" />
+        android:layout_above="@+id/button_random"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
