@@ -39,7 +39,17 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:src="@drawable/main"
+        android:layout_alignParentTop="true"
         android:layout_above="@+id/button_random"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.example.phanthilasaengthong.icanteen.Circle
+        android:id="@+id/Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>

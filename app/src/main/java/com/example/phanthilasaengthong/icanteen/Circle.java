@@ -28,7 +28,7 @@ public class Circle extends View {
     private Handler h;
     int count = 0;
 
-    int radius = 20;
+    int radius = 50;
 
     List<Integer> posX = new ArrayList<Integer>();
     List<Integer> posY = new ArrayList<Integer>();
