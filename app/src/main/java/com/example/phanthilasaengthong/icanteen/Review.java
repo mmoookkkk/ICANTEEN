@@ -15,5 +15,8 @@ public class Review extends AppCompatActivity {
         setContentView(R.layout.activity_review);
 
     }
+    public void showThankyou(View view){
+
+    }
 
 }

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 //        testObject.saveInBackground();
         //addchange!!//
     }
+
     public void clickChoose(View view) {
         // Do something in response to button//
         Intent intent = new Intent(this, Choosing.class);

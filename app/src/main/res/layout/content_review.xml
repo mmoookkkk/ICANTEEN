@@ -16,7 +16,16 @@
         android:layout_height="100dip"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/frameLayout"></FrameLayout>
+        android:id="@+id/frameLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COMMENT!!"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal|top"
+            android:onClick="=showThankyou"/>
+    </FrameLayout>
 
     <ScrollView
         android:layout_width="wrap_content"
