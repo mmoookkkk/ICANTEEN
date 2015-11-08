@@ -12,7 +12,7 @@ import android.widget.EditText;
 
 
 public class Choosing extends AppCompatActivity {
-    public final static String TYPE_CHOSEN = "com.mycompany.myfirstapp.MESSAGE";
+    public final static String TYPE_CHOSEN = "com.example.phanthilasaengthong.icanteen.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
