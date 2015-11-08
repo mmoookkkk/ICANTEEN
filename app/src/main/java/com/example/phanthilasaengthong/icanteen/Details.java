@@ -12,14 +12,15 @@ import android.widget.TextView;
 
 public class Details extends AppCompatActivity {
     String name;
+    public final static String RES_NAME = "com.mycompany.myfirstapp.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
         Intent intent = getIntent();
-        String name = intent.getStringExtra(NameList.RES_CHOSEN);
-        int id = intent.getIntExtra(NameList.RES_ID, 0);
+         name = intent.getStringExtra(NameList.RES_CHOSEN);
+        //int id = intent.getIntExtra(NameList.RES_ID, 0);
         TextView rn = (TextView) findViewById(R.id.restaurantname);
         rn.setText(name);
 
@@ -130,6 +131,7 @@ public class Details extends AppCompatActivity {
     }
     public void toReview(View view){
         Intent intent2= new Intent(this, Review.class);
+        intent2.putExtra(RES_NAME, name);
         startActivity(intent2);
     }
 }
