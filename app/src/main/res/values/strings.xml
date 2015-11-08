@@ -30,6 +30,7 @@
     <string name="beverage3">สุชาดา น้ำผลไม้</string>
     <string name="beverage4">ก กาแฟสด</string>
     <string name="CATEGORY">CATEGORY</string>
+    <string name="title_activity_thankyou">Thankyou</string>
 
 
 </resources>
