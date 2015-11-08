@@ -43,7 +43,7 @@ public class Details extends AppCompatActivity {
             TextView menu_restaurant = (TextView) findViewById(R.id.menu_restaurant);
             menu_restaurant.setText("ก๋วยเตี๋ยวต้มยำทรงเครื่อง\nข้าวอัญชัญกับยำปลาสด\nเกาเหลาเลือดหมู");
 
-        }if (name.equals(R.string.food4)) {
+        }if (name.equals(getResources().getString(R.string.food4))) {
             ImageView image_restaurant = (ImageView) findViewById(R.id.image_restaurant);
             image_restaurant.setImageResource(R.drawable.orawan);
             TextView menu_restaurant = (TextView) findViewById(R.id.menu_restaurant);
@@ -126,5 +126,10 @@ public class Details extends AppCompatActivity {
 
         }
 
+
+    }
+    public void toReview(View view){
+        Intent intent2= new Intent(this, Review.class);
+        startActivity(intent2);
     }
 }
