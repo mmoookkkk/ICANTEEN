@@ -67,11 +67,11 @@
         <activity
             android:name=".Thankyou"
             android:label="@string/title_activity_thankyou"
-            android:parentActivityName=".Details"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.phanthilasaengthong.icanteen.Details" />
+                android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
         </activity>
     </application>
 
