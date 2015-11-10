@@ -10,10 +10,10 @@
         android:id="@+id/button_choose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/choose"
+        android:background="@drawable/choose"
+        android:onClick="clickChoose"
         android:layout_above="@+id/button_random"
-        android:layout_centerHorizontal="true"
-        android:onClick="clickChoose"/>
+        android:layout_centerHorizontal="true" />
 
 
     <ImageButton
@@ -21,10 +21,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/random"
+        android:onClick="clickRandom"
+        android:background="#b80000"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/button_choose"
-        android:layout_alignStart="@+id/button_choose"
-        android:onClick="clickRandom"/>
+        android:layout_centerHorizontal="true" />
 
 
 

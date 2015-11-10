@@ -30,7 +30,6 @@ public class NameList extends AppCompatActivity {
 
         if (type.equals(getResources().getString(R.string.FOOD))) {
             Fragment_food fragment1 = new Fragment_food();
-
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.add(R.id.fragment_container, fragment1).commit();
 

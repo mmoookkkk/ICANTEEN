@@ -35,6 +35,8 @@ public class Review extends AppCompatActivity {
         setContentView(R.layout.activity_review);
         Intent intent=getIntent();
         name = intent.getStringExtra(Details.RES_NAME);
+       // Parse.enableLocalDatastore(this);
+       // Parse.initialize(this, "DGvHPpPOc1GMvZ3uortPKJUnUxoB1UvHIEB18tqF", "rGHEIPpLxH9zmqwVoo1RNEilKoiPQjQJwiwt16Kz");
 
 
 
@@ -44,8 +46,7 @@ public class Review extends AppCompatActivity {
         super.onResume();
 
 
-        Parse.enableLocalDatastore(this);
-        Parse.initialize(this, "DGvHPpPOc1GMvZ3uortPKJUnUxoB1UvHIEB18tqF", "rGHEIPpLxH9zmqwVoo1RNEilKoiPQjQJwiwt16Kz");
+
 
 
         //TextView commentbefore=(TextView)findViewById(R.id.previouscomments);

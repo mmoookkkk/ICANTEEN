@@ -24,8 +24,8 @@
         android:layout_gravity="right" />
 
     <ImageView
-        android:layout_width="174dip"
-        android:layout_height="wrap_content"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
         android:id="@+id/image_restaurant"
         android:layout_weight="0.52" />
 
@@ -39,18 +39,17 @@
         android:layout_marginBottom="20dip"
         android:layout_gravity="right" />
 
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="review"
         android:id="@+id/button_review"
         android:layout_gravity="right" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar2" />
-
 
 
 </LinearLayout>
