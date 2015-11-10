@@ -6,39 +6,35 @@
 
     tools:context=".MainActivity"
     android:background="#800000">
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/RANDOM"
-        android:id="@+id/button_random"
-        android:onClick="clickRandom"
-        android:layout_marginBottom="153dp"
-        android:layout_alignParentBottom="true"
-        android:textColor="#ffffff"
-        android:background="#a0a0a0"
-        android:visibility="visible"
-        android:layout_alignRight="@+id/button_choose"
-        android:layout_alignEnd="@+id/button_choose"
-        android:layout_marginTop="20dp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/CHOOSE"
+    <ImageButton
         android:id="@+id/button_choose"
-        android:layout_alignTop="@+id/button_random"
-        android:onClick="clickChoose"
-        android:background="#a0a0a0"
-        android:textColor="#ffffff"
-        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/choose"
+        android:layout_above="@+id/button_random"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="70dp"/>
+        android:onClick="clickChoose"/>
+
+
+    <ImageButton
+        android:id="@+id/button_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/random"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/button_choose"
+        android:layout_alignStart="@+id/button_choose"
+        android:onClick="clickRandom"/>
+
+
+
+
 
     <ImageView
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:src="@drawable/main"
-        android:layout_centerHorizontal="true"
-        android:layout_above="@+id/button_random" />
+        android:layout_above="@+id/button_choose"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
