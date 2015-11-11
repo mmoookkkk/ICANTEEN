@@ -61,14 +61,18 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="20dp"/>
 
-    <Button
+
+    <ImageButton
+        android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="review"
-        android:id="@+id/button_review"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="80dp"
+        android:src="@drawable/review"
+        android:background="#b80000"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:onClick="toReview"/>
+
+
 
 </LinearLayout>
