@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Details extends AppCompatActivity {
     String name;
-    public final static String RES_NAME = "com.mycompany.myfirstapp.MESSAGE";
+    public final static String RES_NAME = "com.example.phanthilasaengthong.icanteen.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

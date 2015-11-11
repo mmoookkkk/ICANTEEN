@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:name=".ICANTEEN"
         android:allowBackup="true"
         android:icon="@drawable/iconn"
         android:installLocation="preferExternal"
@@ -13,6 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity android:name=".MainActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,16 +25,19 @@
             android:name=".Random"
             android:label="@string/title_activity_random"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
+                android:value="com.example.phanthilasaengthong.icanteen.MainActivity"
+                android:configChanges="orientation|screenSize"/>
         </activity>
         <activity
             android:name=".Choosing"
             android:label="@string/title_activity_choosing"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
@@ -50,7 +55,8 @@
             android:name=".Details"
             android:label="@string/title_activity_details"
             android:parentActivityName=".NameList"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.NameList" />
@@ -59,7 +65,8 @@
             android:name=".Review"
             android:label="@string/title_activity_review"
             android:parentActivityName=".Details"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.Details" />
@@ -67,11 +74,12 @@
         <activity
             android:name=".Thankyou"
             android:label="@string/title_activity_thankyou"
-            android:parentActivityName=".Details"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.phanthilasaengthong.icanteen.Details" />
+                android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
         </activity>
     </application>
 
