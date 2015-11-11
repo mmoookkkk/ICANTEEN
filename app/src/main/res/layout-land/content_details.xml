@@ -29,6 +29,23 @@
         android:id="@+id/image_restaurant"
         android:layout_weight="0.52" />
 
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:src="@drawable/review"
+        android:background="#800000"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:onClick="toReview"/>
+
     <TextView
         android:layout_width="243dip"
         android:layout_height="wrap_content"
@@ -37,18 +54,6 @@
         android:layout_weight="0.55"
         android:layout_marginTop="20dip"
         android:layout_marginBottom="20dip"
-        android:layout_gravity="right" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar2" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="review"
-        android:id="@+id/button_review"
         android:layout_gravity="right" />
 
 
