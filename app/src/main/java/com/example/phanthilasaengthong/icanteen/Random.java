@@ -95,9 +95,8 @@ public class Random extends AppCompatActivity {
         }
 
 
-
-
     }
+
     public void newRandom(View view) {
      r = (int) Math.ceil(Math.random() * 7);
 
@@ -173,8 +172,5 @@ public class Random extends AppCompatActivity {
         }
 
     }
-
-
-
 
 }
