@@ -16,8 +16,7 @@
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.2"></TableRow>
+        android:layout_gravity="center_horizontal"></TableRow>
 
     <TextView
         android:layout_width="212dp"
@@ -28,45 +27,42 @@
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffff"
         android:textAlignment="center"
-        android:layout_weight="0.06"
         android:textSize="30dp"
         android:layout_marginBottom="50dp"
         />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/FOOD"
+
+    <ImageButton
         android:id="@+id/button_food"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#a0a0a0"
-        android:textColor="#ffffff"
-        android:visibility="visible"
-        android:onClick="chooseCategory"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/BEVERAGE"
-        android:id="@+id/button_beverage"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#a0a0a0"
-        android:textColor="#ffffff"
-        android:visibility="visible"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:src="@drawable/food"
+        android:background="#800000"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:onClick="chooseCategory"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/DESSERT"
+        android:layout_weight="0.08" />
+    <ImageButton
+        android:id="@+id/button_beverage"
+        android:layout_width="329dp"
+        android:layout_height="60dp"
+        android:src="@drawable/beverage"
+        android:background="#800000"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="chooseCategory"
+        android:layout_weight="0.08" />
+    <ImageButton
         android:id="@+id/button_dessert"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="#a0a0a0"
-        android:textColor="#ffffff"
-        android:visibility="visible"
-        android:onClick="chooseCategory"/>
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:src="@drawable/dessert"
+        android:background="#800000"
+        android:layout_marginBottom="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="chooseCategory"
+        android:layout_weight="0.08" />
 </LinearLayout>
