@@ -23,9 +23,9 @@ import java.util.List;
 
 public class Details extends AppCompatActivity {
     String name;
-     ArrayList<String> stararray=new ArrayList<>();
+    // ArrayList<String> stararray=new ArrayList<>();
      int sumStar=0;
-     String[] arraystar=null;
+     //String[] arraystar=null;
     int size;
      double starAvg;
     public final static String RES_NAME = "com.example.phanthilasaengthong.icanteen.MESSAGE";
@@ -192,5 +192,6 @@ public class Details extends AppCompatActivity {
         starAvg = sumStar/size;
         RatingBar ratingBar=(RatingBar)findViewById(R.id.ratingBar2);
         ratingBar.setRating((float)starAvg);
+        ratingBar.setIsIndicator(true);
     }
 }
