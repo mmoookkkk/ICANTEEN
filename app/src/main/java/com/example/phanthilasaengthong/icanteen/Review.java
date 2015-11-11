@@ -32,9 +32,11 @@ public class Review extends AppCompatActivity {
     ParseObject testObject;
     String comments;
     String name;
-    static ArrayList<String> commentarray=new ArrayList<>();
-    static String[] arraycomment;
-    static int size;
+    ArrayAdapter<String> objAdapter;
+    ArrayList<String> commentarray=new ArrayList<>();
+      String[] arraycomment;
+     int size;
+    Fragment_comment fragment_comment = null;
 
 
 
@@ -48,36 +50,73 @@ public class Review extends AppCompatActivity {
 
 
     }
+
     public void onResume(){
         super.onResume();
 
 
         ParseQuery<ParseObject> query = ParseQuery.getQuery("try");
         query.whereEqualTo("name", name);
-        query.findInBackground(new FindCallback<ParseObject>() {
-            public void done(List<ParseObject> commentList, ParseException e) {
-                if (e == null) {
-                    for (ParseObject comment : commentList) {
-                        Log.d("comments", (String) comment.get("comments"));
 
-                        commentarray.add((String) comment.get("comments"));
-                    }
-                } else {
-                    Log.d("comments", "Error: " + e.getMessage());
-                }
+        try {
+            List<ParseObject> commentList = query.find();
+            commentarray.clear();
+            size=0;
+            for(ParseObject comment:commentList){
+                commentarray.add((String)comment.get("comments"));
+                Log.d("add", (String) comment.get("comments"));
+                size++;
+                Log.d("size",""+size);
             }
 
-        });
-        size=commentarray.size();
+
+        } catch( Exception e) {
+
+
+        }
+//try {
+//    query.find(new FindCallback<ParseObject>() {
+//        public void done(List<ParseObject> commentList, ParseException e) {
+//            if (e == null) {
+//                commentarray.clear();
+//
+//                if (fragment_comment != null) {
+//                    objAdapter = fragment_comment.getObj();
+//                    objAdapter.clear();
+//                }
+//
+//                for (ParseObject comment : commentList) {
+//                    Log.d("comments", (String) comment.get("comments"));
+//                    commentarray.add((String) comment.get("comments"));
+//                    //   objAdapter.add((String) comment.get("comments"));
+//                }
+//                if (objAdapter != null) {
+//                    objAdapter.notifyDataSetChanged();
+//                }
+//            } else {
+//                Log.d("comments", "Error: " + e.getMessage());
+//            }
+//        }
+//
+//    });
+//}catch(Exception e){
+//
+//}
+
         arraycomment=new String[size];
         for(int i=0;i<size;i++){
             arraycomment[i]="COMMENT"+(i+1)+" :"+commentarray.get(i);
-            Log.d("show", commentarray.get(i));
+            Log.d("inArray", arraycomment[i]);
         }
-        Fragment_comment fragment_comment = new Fragment_comment();
-        FragmentTransaction ft = getFragmentManager().beginTransaction();
-        ft.add(R.id.fragment_container2, fragment_comment).commit();
-        commentarray.clear();
+
+            fragment_comment = new Fragment_comment();
+        fragment_comment.setComments(arraycomment);
+      //  fragment_comment.getObj().notifyDataSetChanged();
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+
+            ft.add(R.id.fragment_container2, fragment_comment).commit();
+
+
 
     }
     public void showThankyou(View view){
@@ -96,17 +135,25 @@ public class Review extends AppCompatActivity {
     }
     public static class Fragment_comment extends Fragment {
        private ListView myListView;
-        public Fragment_comment() {
-        }
+        String[] arrayfromabove = null;
+        ArrayAdapter<String> obj2;
 
+        public Fragment_comment() {
+
+
+        }
+        public void setComments(String[] comments){
+            arrayfromabove = comments;
+        }
+        public ArrayAdapter<String> getObj() { return obj2; }
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView=inflater.inflate(R.layout.fragment_commentlist,
                     container, false);
             myListView= (ListView)rootView.findViewById(R.id.listcomment);
-            ArrayAdapter<String> objAdapter=new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,arraycomment);
-            myListView.setAdapter(objAdapter);
+             obj2=new ArrayAdapter<String>(this.getActivity(),android.R.layout.simple_list_item_1,arrayfromabove);
+            myListView.setAdapter(obj2);
 
 
             return rootView;
