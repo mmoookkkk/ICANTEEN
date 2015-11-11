@@ -74,34 +74,7 @@ public class Review extends AppCompatActivity {
 
 
         }
-//try {
-//    query.find(new FindCallback<ParseObject>() {
-//        public void done(List<ParseObject> commentList, ParseException e) {
-//            if (e == null) {
-//                commentarray.clear();
-//
-//                if (fragment_comment != null) {
-//                    objAdapter = fragment_comment.getObj();
-//                    objAdapter.clear();
-//                }
-//
-//                for (ParseObject comment : commentList) {
-//                    Log.d("comments", (String) comment.get("comments"));
-//                    commentarray.add((String) comment.get("comments"));
-//                    //   objAdapter.add((String) comment.get("comments"));
-//                }
-//                if (objAdapter != null) {
-//                    objAdapter.notifyDataSetChanged();
-//                }
-//            } else {
-//                Log.d("comments", "Error: " + e.getMessage());
-//            }
-//        }
-//
-//    });
-//}catch(Exception e){
-//
-//}
+
 
         arraycomment=new String[size];
         for(int i=0;i<size;i++){
@@ -109,7 +82,7 @@ public class Review extends AppCompatActivity {
             Log.d("inArray", arraycomment[i]);
         }
 
-            fragment_comment = new Fragment_comment();
+        fragment_comment = new Fragment_comment();
         fragment_comment.setComments(arraycomment);
       //  fragment_comment.getObj().notifyDataSetChanged();
             FragmentTransaction ft = getFragmentManager().beginTransaction();
