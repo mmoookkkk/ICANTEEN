@@ -3,6 +3,9 @@ package com.example.phanthilasaengthong.icanteen;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -46,6 +49,7 @@ public class Review extends AppCompatActivity {
         setContentView(R.layout.activity_review);
         Intent intent=getIntent();
         name = intent.getStringExtra(Details.RES_NAME);
+
 
 
 

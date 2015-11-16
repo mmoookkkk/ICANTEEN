@@ -33,7 +33,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/ratingBarInput"
         android:layout_above="@+id/COMMENT"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#f0d20e" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
