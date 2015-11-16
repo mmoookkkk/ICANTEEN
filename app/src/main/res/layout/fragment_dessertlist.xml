@@ -26,10 +26,4 @@
         android:id="@+id/des3"
         android:onClick="chooseFood"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/dessert4"
-        android:id="@+id/des4"
-        android:onClick="chooseFood"/>
 </LinearLayout>

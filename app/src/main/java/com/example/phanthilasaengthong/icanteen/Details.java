@@ -133,9 +133,7 @@ public class Details extends AppCompatActivity {
             TextView menu_restaurant = (TextView) findViewById(R.id.menu_restaurant);
 
         }
-        if (name.equals(getResources().getString(R.string.dessert4))) {
 
-        }
         if (name.equals(getResources().getString(R.string.beverage1))) {
             TextView menu_restaurant = (TextView) findViewById(R.id.menu_restaurant);
 
