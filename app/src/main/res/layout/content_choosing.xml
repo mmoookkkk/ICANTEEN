@@ -45,7 +45,7 @@
             <ImageButton
                 android:id="@+id/button_food"
                 android:layout_width="327dp"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/food"
                 android:background="#800000"
                 android:layout_marginBottom="59dp"
@@ -56,7 +56,7 @@
             <ImageButton
                 android:id="@+id/button_beverage"
                 android:layout_width="329dp"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/beverage"
                 android:background="#800000"
                 android:layout_marginBottom="59dp"
@@ -67,7 +67,7 @@
             <ImageButton
                 android:id="@+id/button_dessert"
                 android:layout_width="327dp"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:src="@drawable/dessert"
                 android:background="#800000"
                 android:layout_marginBottom="59dp"
