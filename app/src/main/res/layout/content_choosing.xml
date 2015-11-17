@@ -13,56 +13,68 @@
     android:background="#800000"
     android:weightSum="1">
 
-    <TableRow
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"></TableRow>
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4" >
 
-    <TextView
-        android:layout_width="212dp"
-        android:layout_height="43dp"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/CATEGORY"
-        android:id="@+id/text_category"
-        android:layout_gravity="center_horizontal"
-        android:textColor="#ffffff"
-        android:textAlignment="center"
-        android:textSize="30dp"
-        android:layout_marginBottom="50dp"
-        />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"></TableRow>
+
+            <TextView
+                android:layout_width="212dp"
+                android:layout_height="43dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/CATEGORY"
+                android:id="@+id/text_category"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_marginBottom="50dp"
+                />
 
 
-    <ImageButton
-        android:id="@+id/button_food"
-        android:layout_width="327dp"
-        android:layout_height="60dp"
-        android:src="@drawable/food"
-        android:background="#800000"
-        android:layout_marginBottom="59dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="chooseCategory"
-        android:layout_weight="0.08" />
-    <ImageButton
-        android:id="@+id/button_beverage"
-        android:layout_width="329dp"
-        android:layout_height="60dp"
-        android:src="@drawable/beverage"
-        android:background="#800000"
-        android:layout_marginBottom="59dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="chooseCategory"
-        android:layout_weight="0.08" />
-    <ImageButton
-        android:id="@+id/button_dessert"
-        android:layout_width="327dp"
-        android:layout_height="60dp"
-        android:src="@drawable/dessert"
-        android:background="#800000"
-        android:layout_marginBottom="59dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:onClick="chooseCategory"
-        android:layout_weight="0.08" />
+            <ImageButton
+                android:id="@+id/button_food"
+                android:layout_width="327dp"
+                android:layout_height="60dp"
+                android:src="@drawable/food"
+                android:background="#800000"
+                android:layout_marginBottom="59dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseCategory"
+                android:layout_weight="0.08" />
+            <ImageButton
+                android:id="@+id/button_beverage"
+                android:layout_width="329dp"
+                android:layout_height="60dp"
+                android:src="@drawable/beverage"
+                android:background="#800000"
+                android:layout_marginBottom="59dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseCategory"
+                android:layout_weight="0.08" />
+            <ImageButton
+                android:id="@+id/button_dessert"
+                android:layout_width="327dp"
+                android:layout_height="60dp"
+                android:src="@drawable/dessert"
+                android:background="#800000"
+                android:layout_marginBottom="59dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="chooseCategory"
+                android:layout_weight="0.08" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

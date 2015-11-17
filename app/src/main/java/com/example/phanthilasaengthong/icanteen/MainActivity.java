@@ -15,13 +15,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        Parse.enableLocalDatastore(this);
-//        Parse.initialize(this, "DGvHPpPOc1GMvZ3uortPKJUnUxoB1UvHIEB18tqF", "rGHEIPpLxH9zmqwVoo1RNEilKoiPQjQJwiwt16Kz");
-//
-//        ParseObject testObject = new ParseObject("hello");
-//       testObject.put("foo", "yay");
-//        testObject.saveInBackground();
-        //addchange!!//
+
     }
 
     public void clickChoose(View view) {
