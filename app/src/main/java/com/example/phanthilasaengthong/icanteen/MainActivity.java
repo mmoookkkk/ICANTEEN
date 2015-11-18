@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Intent intent= getIntent();
         setContentView(R.layout.activity_main);
         alertdialog=new AlertDialog.Builder(this).create();
         alertdialog.setTitle("WARNING!!");

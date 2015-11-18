@@ -4,25 +4,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
+
     android:background="#800000"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
+
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_thankyou"
     tools:context="com.example.phanthilasaengthong.icanteen.Thankyou">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Thank you."
-        android:textColor="#ffffff"
-        android:textSize="50dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="220dp"
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView5"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.phanthilasaengthong.icanteen.Circle
+                android:id="@+id/Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="200dip"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Thank you."
+                android:textColor="#ffffff"
+                android:textSize="50dip"
+                android:layout_gravity="center"
+                android:id="@+id/textView4" />
+            <com.example.phanthilasaengthong.icanteen.Circle
+                android:id="@+id/Circle2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dip"
+               />
+
+            <ImageButton
+                android:id="@+id/buttgobacktomain"
+                android:layout_width="230dip"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:background="#800000"
+                android:onClick="onGoBack"
+                android:layout_gravity="center_horizontal"
+
+                android:layout_marginBottom="50dp" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
+

@@ -30,16 +30,16 @@ public class Circle extends View {
     private Handler h;
     int count = 0;
 
-    int radius = 50;
+    int radius = 72;
 
-    List<Integer> posX = new ArrayList<Integer>();
-    List<Integer> posY = new ArrayList<Integer>();
-    List<Integer> count2 = new ArrayList<Integer>();
+    List<Integer> posX = new ArrayList<>();
+    List<Integer> posY = new ArrayList<>();
+    List<Integer> count2 = new ArrayList<>();
 
     public void random(int w, int h) {
         Random r = new Random();
-        x = r.nextInt(w - (2 * radius)) + radius;
-        y = r.nextInt(h - (2 * radius)) + radius;
+        x = r.nextInt(w - (2 * radius)) ;
+        y = r.nextInt(h - (2 * radius)) ;
 
     }
 
@@ -79,9 +79,7 @@ public class Circle extends View {
             count2.add(0);
         }
         count = (count + 1) % 10;
-        Paint paint = new Paint();
-        paint.setStyle(Paint.Style.FILL);
-        paint.setColor(Color.rgb(195,255,255));
+
         for(int j=0; j<count2.size();j++){
             if(count2.get(j)>5){
                 count2.remove(j);

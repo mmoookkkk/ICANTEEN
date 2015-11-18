@@ -25,7 +25,13 @@ public class Thankyou extends AppCompatActivity {
         startActivity(intent2);
 
     }
-
+    public void onGoBack(View view) {
+        Intent intent3=new Intent(this,MainActivity.class);
+        startActivity(intent3);
 
     }
+
+
+
+}
 

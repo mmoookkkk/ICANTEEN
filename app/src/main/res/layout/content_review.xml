@@ -20,7 +20,7 @@
         android:layout_alignEnd="@+id/edit_message"
         android:textColor="#ffffff"/>
     <EditText android:id="@+id/edit_message"
-        android:textColor="#ffffff"
+        android:textColor="#010000"
 
         android:hint="enter your comment here"
         android:layout_width="match_parent"
