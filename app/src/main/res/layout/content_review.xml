@@ -17,8 +17,10 @@
         android:id="@+id/textView2"
         android:gravity="center_horizontal"
         android:layout_alignRight="@+id/edit_message"
-        android:layout_alignEnd="@+id/edit_message" />
+        android:layout_alignEnd="@+id/edit_message"
+        android:textColor="#ffffff"/>
     <EditText android:id="@+id/edit_message"
+        android:textColor="#ffffff"
 
         android:hint="enter your comment here"
         android:layout_width="match_parent"
@@ -53,7 +55,8 @@
         android:layout_alignBottom="@+id/COMMENT"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:textColor="#ffffff"/>
 
     <FrameLayout
         android:id="@+id/fragment_container2"
