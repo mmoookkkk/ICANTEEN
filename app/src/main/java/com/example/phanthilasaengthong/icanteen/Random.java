@@ -9,10 +9,16 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.os.Vibrator;
+
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+
+import java.util.List;
 
 public class Random extends AppCompatActivity {
    int r=1;
@@ -44,14 +50,13 @@ public class Random extends AppCompatActivity {
 
 
 
+
     }
 
     private void handleShakeEvent(int count) {
         r=(int) Math.ceil(Math.random()*7);
         doRandom(r);
-        Vibrator v = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
-        // Vibrate for 500 milliseconds
-        v.vibrate(500);
+
     }
 
     protected void onResume() {
@@ -74,76 +79,73 @@ public class Random extends AppCompatActivity {
 
     }
     public void doRandom(int r){
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("randominfo");
+        query.whereEqualTo("R", r);
+        try{
+            List<ParseObject> randomList=query.find();
+            for(ParseObject random:randomList){
+                TextView menu_random = (TextView) findViewById(R.id.menu_random);
+                menu_random.setText(random.get("rmenu").toString());
+                TextView res_random = (TextView) findViewById(R.id.random_shop);
+                res_random.setText(random.get("rrestaurant").toString());
+
+            }
+
+        }catch(Exception e){
+            Log.e("error","error");
+        }
         if (r == 1) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("ข้าวเหนียวไก่ทอด");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.food5));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random1);
 
         }
 
         if (r == 2) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("ข้าวไก่แซ่บ");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.food6));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random2);
 
         }
 
         if (r == 3) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("ไข่กระทะ");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.food2));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random3);
 
         }
 
         if (r == 4) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("ก๋วยเตี๋ยวต้มยำ");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.food3));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random7);
 
         }
 
         if (r == 5) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("ข้าวไก่กระเพรา");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.food6));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random4);
 
         }
 
         if (r == 6) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("หมูมะนาว");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.food3));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random5);
 
         }
 
         if (r == 7) {
-            TextView menu_random = (TextView) findViewById(R.id.menu_random);
-            menu_random.setText("parabola");
-            TextView res_random = (TextView) findViewById(R.id.random_shop);
-            res_random.setText(getResources().getText(R.string.dessert1));
+
             ImageView image_random = (ImageView) findViewById(R.id.image_random);
             image_random.setImageResource(R.drawable.random6);
 
 
         }
+        Vibrator v = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
+        // Vibrate for 500 milliseconds
+        v.vibrate(500);
     }
 
 }

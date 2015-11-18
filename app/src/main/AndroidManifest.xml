@@ -3,9 +3,18 @@
     package="com.example.phanthilasaengthong.icanteen" >
     >
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
-    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
 
     <application
         android:name=".ICANTEEN"
@@ -14,10 +23,8 @@
         android:installLocation="preferExternal"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        >
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
         <activity android:name=".MainActivity" >
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,21 +33,21 @@
         </activity>
         <activity
             android:name=".Random"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_random"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.phanthilasaengthong.icanteen.MainActivity"
-                android:configChanges="orientation|screenSize"/>
+                android:configChanges="orientation|screenSize"
+                android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
         </activity>
         <activity
             android:name=".Choosing"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_choosing"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
@@ -56,30 +63,30 @@
         </activity>
         <activity
             android:name=".Details"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_details"
             android:parentActivityName=".NameList"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.NameList" />
         </activity>
         <activity
             android:name=".Review"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_review"
             android:parentActivityName=".Details"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.Details" />
         </activity>
         <activity
             android:name=".Thankyou"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_thankyou"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:configChanges="orientation|screenSize">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
@@ -87,4 +94,3 @@
     </application>
 
 </manifest>
-

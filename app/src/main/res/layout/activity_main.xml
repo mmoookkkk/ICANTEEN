@@ -6,6 +6,7 @@
 
     tools:context=".MainActivity"
     android:background="#800000">
+
     <ImageButton
         android:id="@+id/button_choose"
         android:layout_width="wrap_content"

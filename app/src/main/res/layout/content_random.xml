@@ -12,6 +12,16 @@
     android:orientation="vertical"
     android:background="#800000"
     android:weightSum="1">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
@@ -67,6 +77,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="newRandom"/>
+        </LinearLayout>
+    </ScrollView>
 
 
 </LinearLayout>
