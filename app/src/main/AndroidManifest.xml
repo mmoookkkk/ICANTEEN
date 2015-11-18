@@ -91,10 +91,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.phanthilasaengthong.icanteen.MainActivity" />
         </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" >
-        </activity>
     </application>
 
 </manifest>
