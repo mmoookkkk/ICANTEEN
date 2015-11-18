@@ -23,9 +23,8 @@ import java.util.List;
 
 public class Details extends AppCompatActivity {
     String name;
-    // ArrayList<String> stararray=new ArrayList<>();
      int sumStar=0;
-     //String[] arraystar=null;
+
     int size;
      double starAvg;
     public final static String RES_NAME = "com.example.phanthilasaengthong.icanteen.MESSAGE";
@@ -39,6 +38,19 @@ public class Details extends AppCompatActivity {
         //int id = intent.getIntExtra(NameList.RES_ID, 0);
         TextView rn = (TextView) findViewById(R.id.restaurantname);
         rn.setText(name);
+
+
+
+    }
+
+    public void toReview(View view) {
+        Intent intent2 = new Intent(this, Review.class);
+        intent2.putExtra(RES_NAME, name);
+        startActivity(intent2);
+    }
+
+    public void onResume() {
+        super.onResume();
         ParseQuery<ParseObject> query = ParseQuery.getQuery("details");
         query.whereEqualTo("restaurant", name);
         try{
@@ -53,6 +65,8 @@ public class Details extends AppCompatActivity {
         }catch(Exception e){
             Log.e("error","error");
         }
+
+
 
 
         if (name.equals(getResources().getString(R.string.food1))) {
@@ -164,22 +178,10 @@ public class Details extends AppCompatActivity {
         }
 
 
-    }
-
-    public void toReview(View view) {
-        Intent intent2 = new Intent(this, Review.class);
-        intent2.putExtra(RES_NAME, name);
-        startActivity(intent2);
-    }
-
-    public void onResume() {
-        super.onResume();
-
-
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("try");
+        ParseQuery<ParseObject> query2 = ParseQuery.getQuery("try");
         query.whereEqualTo("name", name);
         try{
-            List<ParseObject> ratingList=query.find();
+            List<ParseObject> ratingList=query2.find();
            sumStar=0;
             size=0;
             for(ParseObject star:ratingList){
