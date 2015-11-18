@@ -56,9 +56,7 @@ public class Random extends AppCompatActivity {
     private void handleShakeEvent(int count) {
         r=(int) Math.ceil(Math.random()*7);
         doRandom(r);
-        Vibrator v = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
-        // Vibrate for 500 milliseconds
-        v.vibrate(500);
+
     }
 
     protected void onResume() {
@@ -145,6 +143,9 @@ public class Random extends AppCompatActivity {
 
 
         }
+        Vibrator v = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
+        // Vibrate for 500 milliseconds
+        v.vibrate(500);
     }
 
 }
