@@ -1,6 +1,8 @@
 package com.example.phanthilasaengthong.icanteen;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -89,7 +91,8 @@ public class Circle extends View {
 
         }
         for (int i = 0; i < posX.size(); i++) {
-            c.drawCircle(posX.get(i), posY.get(i), radius, paint);
+            Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.spoon);
+            c.drawBitmap(bmp,0,0,null);
             System.out.print(i);
             count2.set(i, count2.get(i) + 1);
 

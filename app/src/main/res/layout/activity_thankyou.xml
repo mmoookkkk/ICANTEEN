@@ -24,7 +24,17 @@
     android:layout_alignParentRight="true"
     android:layout_alignParentEnd="true" />
 
-
+    <ImageButton
+        android:id="@+id/button_dessert"
+        android:layout_width="327dp"
+        android:layout_height="60dp"
+        android:src="@drawable/back"
+        android:background="#800000"
+        android:layout_marginTop="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onBackPressed"
+        android:layout_weight="0.08" />
 
 
 </android.support.design.widget.CoordinatorLayout>
