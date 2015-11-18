@@ -92,7 +92,7 @@ public class Circle extends View {
         }
         for (int i = 0; i < posX.size(); i++) {
             Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.spoon);
-            c.drawBitmap(bmp,0,0,null);
+            c.drawBitmap(bmp,posX.get(i),posY.get(i),null);
             System.out.print(i);
             count2.set(i, count2.get(i) + 1);
 
