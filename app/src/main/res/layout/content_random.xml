@@ -70,12 +70,14 @@
     <ImageButton
         android:id="@+id/button"
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="60dip"
         android:src="@drawable/random"
         android:background="#800000"
-        android:layout_marginBottom="59dp"
+
+        android:layout_marginTop="30dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
         android:onClick="newRandom"/>
         </LinearLayout>
     </ScrollView>
