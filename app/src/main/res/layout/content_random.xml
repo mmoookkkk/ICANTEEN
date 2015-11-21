@@ -36,13 +36,23 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="#ffffff"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Tap the button or Shake to random!"
+                android:id="@+id/textView5"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:id="@+id/image_random"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:visibility="visible" />
 
     <TextView
