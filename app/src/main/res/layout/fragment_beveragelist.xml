@@ -10,26 +10,38 @@
         android:layout_height="wrap_content"
         android:text="@string/beverage1"
         android:id="@+id/bev1"
-        android:onClick="chooseFood"/>
+        android:onClick="chooseFood"
+        android:textColor="#ffffff"
+        android:background="#9d9d9d"
+        android:layout_marginTop="120dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/beverage2"
         android:id="@+id/bev2"
-        android:onClick="chooseFood"/>
+        android:onClick="chooseFood"
+        android:textColor="#ffffff"
+        android:background="#9d9d9d"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/beverage3"
         android:id="@+id/bev3"
-        android:onClick="chooseFood"/>
+        android:onClick="chooseFood"
+        android:textColor="#ffffff"
+        android:background="#9d9d9d"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/beverage4"
         android:id="@+id/bev4"
-        android:onClick="chooseFood"/>
+        android:onClick="chooseFood"
+        android:textColor="#ffffff"
+        android:background="#9d9d9d"
+        android:layout_marginTop="20dp"/>
 </LinearLayout>
