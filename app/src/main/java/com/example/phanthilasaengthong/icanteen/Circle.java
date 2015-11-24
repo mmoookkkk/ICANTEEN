@@ -65,7 +65,7 @@ public class Circle extends View {
         };
         dthread = new DrawingThread(this, 10);
         dthread.start();
-        //d
+
     }
 
     public void onDraw(Canvas c) {
@@ -91,7 +91,6 @@ public class Circle extends View {
         for (int i = 0; i < posX.size(); i++) {
             Bitmap bmp = BitmapFactory.decodeResource(getResources(), R.drawable.spoon);
             c.drawBitmap(bmp,posX.get(i),posY.get(i),null);
-            System.out.print(i);
             count2.set(i, count2.get(i) + 1);
 
         }

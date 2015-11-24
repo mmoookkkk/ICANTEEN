@@ -35,7 +35,7 @@ public class Details extends AppCompatActivity {
         setContentView(R.layout.activity_details);
         Intent intent = getIntent();
         name = intent.getStringExtra(NameList.RES_CHOSEN);
-        //int id = intent.getIntExtra(NameList.RES_ID, 0);
+
         TextView rn = (TextView) findViewById(R.id.restaurantname);
         rn.setText(name);
 

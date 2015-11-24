@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void clickChoose(View view) {
-        // Do something in response to button//
+
         if(isNetworkAvailable()) {
             Intent intent = new Intent(this, Choosing.class);
             startActivity(intent);

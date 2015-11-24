@@ -30,7 +30,7 @@ public class Random extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_random);
         Intent intent = getIntent();
-        // ShakeDetector initialization
+
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager
                 .getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
@@ -39,11 +39,7 @@ public class Random extends AppCompatActivity {
 
             @Override
             public void onShake(int count) {
-				/*
-				 * The following method, "handleShakeEvent(count):" is a stub //
-				 * method you would use to setup whatever you want done once the
-				 * device has been shook.
-				 */
+
                 handleShakeEvent(count);
             }
         });
@@ -63,12 +59,12 @@ public class Random extends AppCompatActivity {
         super.onResume();
        r=(int) Math.ceil(Math.random()*7);
     doRandom(r);
-// Add the following line to register the Session Manager Listener onResume
+
         mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
 
     }
     public void onPause() {
-        // Add the following line to unregister the Sensor Manager onPause
+
         mSensorManager.unregisterListener(mShakeDetector);
         super.onPause();
     }
@@ -144,7 +140,6 @@ public class Random extends AppCompatActivity {
 
         }
         Vibrator v = (Vibrator) this.getSystemService(Context.VIBRATOR_SERVICE);
-        // Vibrate for 500 milliseconds
         v.vibrate(500);
     }
 
