@@ -160,6 +160,8 @@ public class Details extends AppCompatActivity {
 
         }
         if (name.equals(getResources().getString(R.string.beverage2))) {
+            ImageView image_restaurant = (ImageView) findViewById(R.id.image_restaurant);
+            image_restaurant.setImageResource(R.drawable.raan1);
 
 
 
